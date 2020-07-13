@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.yaqi.mapper.GetUsers">
+
+    <select id="getAllUser"  resultType="com.yaqi.dao.User">
+
+        SELECT
+        user_id  AS userId,
+        user_name AS userName,
+        age AS age,
+        email AS email,
+        gender AS gender,
+        create_time AS createTime,
+        modified_time AS modifiedTime,
+        create_user AS createUser,
+        modified_user AS modifiedUser
+        FROM user;
+
+    </select>
+
+</mapper>
