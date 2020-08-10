@@ -36,7 +36,7 @@
             <property name="requestContextAttribute" value="request"/>
         </bean>
         <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
-            <property name="templateLoaderPath" value="/webs/"></property>
+            <property name="templateLoaderPath" value="/webs/web/"></property>
             <property name="freemarkerSettings">
                 <props>
                     <prop key="default_encoding">UTF-8</prop><!--模板的编码格式 -->
